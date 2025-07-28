@@ -92,7 +92,8 @@ Last updated: 03:14 AM IST, Tuesday, July 29, 2025
 
 
 IMAGES :
-![alt text](image.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
+<img width="1350" height="634" alt="image" src="https://github.com/user-attachments/assets/1038b039-8788-4f03-a4b7-ddca0e6179cd" />
+
+<img width="966" height="637" alt="image" src="https://github.com/user-attachments/assets/09fc5f21-07cc-43a7-95ae-4e0a193bb0d7" />
+<img width="1339" height="644" alt="image" src="https://github.com/user-attachments/assets/54e97ea7-9b8e-4423-9ef1-b5070e6850e0" />
+<img width="1344" height="642" alt="image" src="https://github.com/user-attachments/assets/7fd00f15-2d75-4563-8bed-73d684029f21" />
