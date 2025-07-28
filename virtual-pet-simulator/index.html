@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Pet Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="gameContainer" style="display:none;">
+    <h1>🐾 Virtual Pet Simulator 🐾</h1>
+    <h2 id="petName">Your Pet</h2>
+    <div class="level-info">Level: <span id="level">1</span> | XP: <span id="xp">0</span></div>
+    <div class="achievements" id="achievements"></div>
+    <div class="pet-container">
+      <canvas id="petCanvas" width="200" height="200"></canvas>
+    </div>
+    <div class="stats">
+      <div><span>🍎 Hunger:</span><progress id="hungerBar" value="100" max="100"></progress></div>
+      <div><span>🎮 Happiness:</span><progress id="happinessBar" value="100" max="100"></progress></div>
+      <div><span>😴 Energy:</span><progress id="energyBar" value="100" max="100"></progress></div>
+    </div>
+    <div class="buttons">
+      <button onclick="feedPet()">Feed</button>
+      <button onclick="playWithPet()">Play</button>
+      <button onclick="putPetToSleep()">Sleep</button>
+      <button onclick="toggleDayNight()">Toggle Day/Night</button>
+      <button onclick="showPetSelection()">Change Pet</button>
+    </div>
+  </div>
+
+  <div id="namePrompt" class="modal">
+    <div class="modal-content">
+      <h2>Welcome to Virtual Pet Simulator!</h2>
+      <p>Please name your pet:</p>
+      <input type="text" id="petNameInput" placeholder="Enter pet name" maxlength="20" />
+      <button onclick="startGame()">Start Game</button>
+    </div>
+  </div>
+
+  <div id="petSelection" style="display:none;" class="modal">
+    <div class="modal-content">
+      <h2>Choose Your Pet</h2>
+      <button onclick="switchPet('cat')">Cat</button>
+      <button onclick="switchPet('dragon')">Dragon</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
